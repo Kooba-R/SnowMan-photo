@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 12px 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* ★ 詰めレイアウト */
+.gallery {
+  column-count: 2;        /* 2列 */
+  column-gap: 8px;       /* 横の隙間だけ少し */
+  padding: 8px;
+}
+
+/* 画像共通 */
+.gallery img {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;    /* 縦方向の最小余白 */
+  border-radius: 6px;
+}
+
+/* 縦・横比率 */
+.vertical {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.horizontal {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
